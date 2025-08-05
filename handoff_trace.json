@@ -1,0 +1,50 @@
+[
+  {
+    "agent": "AI_Assistant",
+    "timestamp": "2025-08-04T14:12:00Z",
+    "event": "receive_input",
+    "message": "Hi, I need help with a billing issue."
+  },
+  {
+    "agent": "AI_Assistant",
+    "timestamp": "2025-08-04T14:12:03Z",
+    "event": "process_input",
+    "intent_detected": "billing_issue"
+  },
+  {
+    "agent": "AI_Assistant",
+    "timestamp": "2025-08-04T14:12:05Z",
+    "event": "respond",
+    "message": "Sure, I can help with that. Can you tell me more about the issue?"
+  },
+  {
+    "agent": "User",
+    "timestamp": "2025-08-04T14:12:20Z",
+    "event": "user_reply",
+    "message": "I was charged twice for last month."
+  },
+  {
+    "agent": "AI_Assistant",
+    "timestamp": "2025-08-04T14:12:22Z",
+    "event": "analyze_and_decide_handoff",
+    "reason": "Complex billing issue detected. Policy: escalate to human agent."
+  },
+  {
+    "agent": "AI_Assistant",
+    "timestamp": "2025-08-04T14:12:25Z",
+    "event": "handoff_initiated",
+    "to_agent": "Human_Support_Agent"
+  },
+  {
+    "agent": "Human_Support_Agent",
+    "timestamp": "2025-08-04T14:12:40Z",
+    "event": "handoff_accepted",
+    "message": "Hi, My name is Victoria from billing support. I see you were charged twice. Let me check that for you."
+  },
+  {
+    "agent": "System",
+    "timestamp": "2025-08-04T14:12:41Z",
+    "event": "handoff_successful",
+    "participants": ["AI_Assistant", "Human_Support_Agent"]
+  }
+]
