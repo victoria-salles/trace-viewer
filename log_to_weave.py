@@ -9,7 +9,7 @@ def log_trace_from_json(filename):
 
     weave.publish(trace_data, name="agent_handoff_trace")
 
-    print("Trace enviado para Weave com sucesso.")
+    print("Trace successfully sent to Weave.")
 
 if __name__ == "__main__":
     log_trace_from_json("handoff_trace.json")
